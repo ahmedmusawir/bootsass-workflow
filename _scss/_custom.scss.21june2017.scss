@@ -1,0 +1,59 @@
+@import "bourbon/bourbon";
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+
+body {
+	// background-color: red;
+
+}
+
+#fp-block-2 {
+	// text-align: center;
+
+
+	i {
+		color: lighten( #008080, 10% );
+	}
+
+	h2 {
+		background: url('http://www.cherylkasper.com/wp-content/uploads/2016/07/skulls.jpg');
+		color: lighten( #008080, 10% );
+		padding: 2rem;
+
+		padding-bottom: 5rem;
+		margin-bottom: 0;
+		font-size: 3.5rem !important;
+
+		a {
+			margin-top: 5rem;
+			// margin-bottom: 2rem;
+		}
+
+		span {
+			font-size: 2.5rem;
+		}
+	}
+
+	.text-content {
+		// padding-top: 3rem;
+		
+		h3 {
+			text-align: center;
+			color: #008080;
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+			background: url('http://www.cherylkasper.com/wp-content/uploads/2016/07/lightpaperfibers.jpg');
+		}
+		p {
+			padding: 3rem;
+			font-size: 2rem !important;
+			color: gray !important;
+		}
+	}
+
+	.btn-block {
+		h2 {
+			text-align: center;
+		}
+	}
+}

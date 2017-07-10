@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by ahmedmusawir (http://jsbin.com/zuratuz/5/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="Vue JS 2.0 Practice - 2">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css">
+  <title>JS Bin</title>
+</head>
+<body>
+
+  <div id="app" class="well">
+    
+    <h1 class="jumbotron">{{message}} </h1>
+    
+      <br>
+   <input type="text" class="form-control" v-model="message">
+  <br>
+  <span>
+    This is Message: {{message}}
+  </span> 
+    <br>
+  <ul class="list-group" v-for="fruit in fruits">
+    <li class="list-group-item list-group-item-success" @click="selectFruit(fruit)">
+      {{fruit}}
+    </li>
+  </ul>
+    
+    
+  </div>
+  
+
+  
+
+  
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.4/vue.js"></script>
+<script id="jsbin-javascript">
+
+new Vue ({
+  el: '#app',
+  data: {
+    message: 'Hello Vue 2.0',
+    fruits: [ 'apple', 'Microsoft', 'VMware', 'OSx' ]
+  },
+  methods: {
+    selectFruit(fruit) {
+      this.message = fruit;
+    }
+  }
+});
+
+
+</script>
+</body>
+</html>
+
+
